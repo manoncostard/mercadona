@@ -79,10 +79,13 @@ function getProductsByCategory(category) {
             } else {
                 let products = JSON.parse(xhr.response);
                 let myhtml = "";
-
-                products.forEach(product => {
-                    myhtml += displayProduct(product);
-                })
+                if(products[0] == null) {
+                    myhtml += `<p>Sorry, no product matches your search criteria.</p>`
+                } else {
+                    products.forEach(product => {
+                        myhtml += displayProduct(product);
+                    })
+                }
                 document.getElementById("allProducts").innerHTML = myhtml;
             }  
         }
