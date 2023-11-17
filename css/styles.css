@@ -1,0 +1,364 @@
+body {
+    background-color: var(--color-mercadona-background-grey);
+}
+h1 ,
+h2,
+h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1;
+    margin: 10px;
+    color: var(--color-mercadona-green);
+}
+p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-mercadona-main-text);
+    font-weight: 300;
+    line-height: 1.5;
+}
+button {
+    cursor: pointer;
+    height: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: none;
+    border: 1px solid var(--color-mercadona-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: var(--color-white);
+    color: var(--color-dark-green);
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: var(--color-mercadona-light-grey);
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px var(--color-shaddow);
+    position: fixed;
+    top: 0px;
+}
+header img {
+    height: 35px;
+    margin-left: 20px;
+}
+#quickAccess {
+    width: 100%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: start;;
+}
+
+.banner-homepage {
+    width: 100vw;
+    height: 500px;
+    background-image: url("../resources/banner1@2xmercadona.jpg");
+    background-size: cover;
+    background-position: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 78px;
+    box-shadow: 0 0 15px var(--color-shaddow);
+
+}
+.banner-info {
+    width: 50%;
+    margin: auto 0 auto auto;
+    padding: 20px 40px 20px 20px;
+}
+.banner-info p.banner-promo-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 30px;
+    color: var(--color-darker-green);
+    line-height: 1;
+}
+.banner-info p.banner-promo-text {
+    margin: 0 30px;
+}
+.banner-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button.banner-button {
+    background-color: var(--color-mercadona-green-pop);
+    border: 0;
+    border-radius: 8px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 30px;
+    margin: 35px;
+    transition-duration: 0.4s;
+}
+.banner-button:hover {
+    background-color: var(--color-mercadona-green-popx);
+}
+
+#productSearchSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 60px;
+}
+aside {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+#categoryFilterDiv.sticky {
+    position: fixed;
+    top: 100px;
+    margin-top: 20px;
+}
+#categoryFilterDiv {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+button.category-button {
+    border-radius: 3px;
+    border: none;
+    margin: 1px;
+    background-color: var(--color-mercadona-green-pop);
+    color: var(--color-white);
+    font-size: 1em;
+}
+button.category-button:hover {
+    background-color: var(--color-mercadona-green-popx);
+}
+button.category-button.active {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-mercadona-green-pop);
+    color: var(--color-mercadona-green-pop);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+    min-height: 700px;
+}
+#allProducts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    width: 300px;
+    height: 450px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 4px 4px 30px var(--color-shaddow);
+    border-radius: 6px;
+}
+.product-image-div {
+    display: block;
+    min-height: 200px;
+    width: 260px;
+}
+.product_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.product_info {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+.product p {
+    font-size: 0.9em;
+    text-align: center;
+}
+.product_priceSection {
+    display: flex;
+    align-items: center;;
+    margin: 10px;
+}
+p.product-price {
+    font-size: 1.6em;
+}
+p.product-initPrice {
+    font-size: 1em;
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+p.product-finalPrice {
+    font-weight: bolder;
+    font-size: 1.6em;
+    color: red;
+}
+
+#filterBtn {
+    display: none;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-darker-green);
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--color-white);
+    margin-top: 100px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+footer img {
+    height: 100px;
+}
+
+
+@media screen and (max-width:770px) {
+
+
+    .banner-homepage {
+        width: 100vw;
+        height: 500px;
+        background-image: url("../resources/banner2@2x.d9bf7f3dc9dc00979f75.jpg");
+        background-size: cover;
+        background-position: 50%;
+    }
+    .banner-info {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .banner-info p.banner-promo-title {
+        font-size: 26px;
+        text-align: center;
+        margin: 30px 10px;
+    }
+    .banner-info p.banner-promo-text {
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+    button.banner-button {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 25px 20px;
+    }
+    main {
+        width: 95%;
+        min-height: 1000px;
+    }
+    #productSearchSection {
+        padding: 0;
+    }
+    .product {
+        flex-grow: 1;
+        max-width: 200px;
+        width: 140px;
+        height: 280px;
+        margin: 6px;
+    }
+    .product-image-div {
+        min-height: 120px;
+        width: 100%;
+    }
+    .product_image {
+
+        object-fit: cover;
+        margin-top: 0;
+    }
+    .product_info {
+        margin: 0;
+    }
+    .product h3 {
+        font-size: 16px;
+    }
+    .product p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .product_priceSection {
+        margin: 0;
+    }
+    #asideCategories,
+    #asideCategories.mobi {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        background-color: var(--color-mercadona-background-grey);
+        align-items: center;
+        overflow: scroll;
+        padding: 30px 0;
+    }
+    #asideCategories.show {
+        display: flex;
+    }
+    #asideCategories.hide {
+        display: none;
+    }
+
+    #categoryFilterDiv, 
+    #categoryFilterDiv.sticky {
+        width: 80%;
+        max-width: 200px;
+        position: relative;
+        top: 0;
+    }
+    #filterBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 20;
+        background-color: var(--color-mercadona-green-pop);
+        box-shadow: 0 0 15px var(--color-shaddow);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #filterBtn.hide {
+        display: none;
+    }
+    #filterBtn p {
+        font-size: 10px;
+        color: var(--color-white);
+    }
+
+
+
+}

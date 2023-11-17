@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Mercadona Promo</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/a1ba404e63.js" crossorigin="anonymous"></script>
+    <script>
+        const URL_DEV = "https://mercadona-api-v1-12436f7e2497.herokuapp.com/"
+    </script>
+
+
+    <header>
+        <img id="logo" src="./resources/mercadona-imagotipo-color-300.png">
+        <div id="quickAccess">
+            <button class="header-button" onclick="toProducts()">Catalogue</button>
+        </div>
+    </header>
+    <div class="banner-homepage" id="bannerHomepage">
+        <div class="banner-info" id="bannerInfo">
+            <p class="banner-promo-title" id="bannerPromoTitle">Start browsing through Mercadona's promotions</p>
+            <p class="banner-promo-text" id="bannerPromoText">At Mercadona we pride ourselves in giving our customers, not only the best quality but the greatest deals. Look through our products and find our current promotions.</p>
+            <div class="banner-button-div">
+                <button class="banner-button" id="bannerButton" onclick="toProducts()">OUR PRODUCTS</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="productSearchSection">
+        <aside id="asideCategories">
+            <div id="categoryFilterDiv"></div>
+        </aside>
+        <main>
+            <div id="allProducts" class="all_products"></div>
+        </main>
+
+        <div class="filter-btn" id="filterBtn">
+            <i class="fa-solid fa-filter" style="color: #ffffff;"></i>
+            <p>filter</p>
+        </div>
+        
+    </section>
+
+    <footer id="footer">
+        <img src="./resources/b71a092d-52ce-4369-af58-80cc2f6df4f9.png">
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
